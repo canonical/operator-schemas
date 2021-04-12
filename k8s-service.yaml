@@ -1,0 +1,11 @@
+v1:
+  provides:
+    type: object
+    properties:
+      service-name:
+        type: string
+      service-port:
+        type: string
+    required:
+      - service-name
+      - service-port

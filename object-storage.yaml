@@ -1,0 +1,22 @@
+v1:
+  provides:
+    type: object
+    properties:
+      access-key:
+        type: string
+      namespace:
+        type: ['string', 'null']
+      port:
+        type: number
+      secret-key:
+        type: string
+      secure:
+        type: boolean
+      service:
+        type: string
+    required:
+      - access-key
+      - port
+      - secret-key
+      - secure
+      - service
