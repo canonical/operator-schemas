@@ -1,0 +1,19 @@
+v1:
+  requires:
+    type: object
+    properties:
+      service:
+        type: string
+      port:
+        type: integer
+      allowed-request-headers:
+        type: array
+        items:
+          type: string
+      allowed-response-headers:
+        type: array
+        items:
+          type: string
+    required:
+      - service
+      - port
