@@ -1,0 +1,16 @@
+v1:
+  requires:
+    type: object
+    properties:
+      service:
+        type: string
+      port:
+        type: integer
+      prefix:
+        type: string
+      rewrite:
+        type: string
+    required:
+      - service
+      - port
+      - prefix
