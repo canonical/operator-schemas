@@ -1,3 +1,36 @@
+v3:
+  requires:
+    type: object
+    properties:
+      service:
+        type: string
+      port:
+        type: integer
+      namespace:
+        type: string
+      prefix:
+        type: string
+      rewrite:
+        type: string
+      per_unit_routes:
+        type: boolean
+    required:
+      - service
+      - port
+      - namespace
+      - prefix
+  provides:
+    type: object
+    properties:
+      url:
+        type: string
+      unit_urls:
+        type: object
+        patternProperties:
+          "":
+            type: string
+    required:
+      - url
 v2:
   requires:
     type: object
